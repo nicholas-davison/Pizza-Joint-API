@@ -1,0 +1,200 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "isAdmin": false,
+            "name": "Cressie Thigpen",
+            "address": "123 Main Street Nashville, TN 37201",
+            "email": "cressiebessie@gmail.com",
+            "phoneNumber": "123-456-7890"
+        },
+        {
+            "id": 2,
+            "isAdmin": true,
+            "name": "Giaccamo Shepherd",
+            "address": "456 Elm Street Nashville, TN 37202",
+            "email": "johndoe@example.com",
+            "phoneNumber": "456-789-0123"
+        },
+        {
+            "id": 3,
+            "isAdmin": false,
+            "name": "Alice Smith",
+            "address": "789 Oak Avenue Nashville, TN 37203",
+            "email": "alice.smith@example.com",
+            "phoneNumber": "789-012-3456"
+        },
+        {
+            "id": 4,
+            "isAdmin": false,
+            "name": "Bob Johnson",
+            "address": "1011 Pine Lane Nashville, TN 37204",
+            "email": "bob.johnson@example.com",
+            "phoneNumber": "101-112-1314"
+        }
+    ],
+    "orders": [
+        {
+            "id": 1,
+            "userId": 1,
+            "date": "2024-04-03T18:24:57.692Z",
+            "tableNumber": 4,
+            "tipAmount": 5,
+            "orderTotal": 20,
+            "delivery": false
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "date": "2024-04-03T19:30:00.000Z",
+            "tableNumber": 7,
+            "tipAmount": 8,
+            "orderTotal": 35,
+            "delivery": false
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "date": "2024-04-04T12:45:00.000Z",
+            "tableNumber": 2,
+            "tipAmount": 6,
+            "orderTotal": 25,
+            "delivery": true
+        }
+    ],
+    "orderDeliverers": [
+        {
+            "id": 1,
+            "orderId": 3,
+            "userId": 3
+        }
+    ],
+    "pizzas": [
+        {
+            "id": 1,
+            "orderId": 1,
+            "sizeId": 3,
+            "cheeseId": 1,
+            "sauceId": 1
+        },
+        {
+            "id": 2,
+            "orderId": 2,
+            "sizeId": 2,
+            "cheeseId": 2,
+            "sauceId": 2
+        },
+        {
+            "id": 3,
+            "orderId": 3,
+            "sizeId": 1,
+            "cheeseId": 3,
+            "sauceId": 1
+        },
+        {
+            "id": 4,
+            "orderId": 3,
+            "sizeId": 3,
+            "cheeseId": 2,
+            "sauceId": 3
+        }
+    ],
+    "toppings": [
+        {
+            "id": 1,
+            "type": "pepperoni"
+        },
+        {
+            "id": 2,
+            "type": "mushrooms"
+        },
+        {
+            "id": 3,
+            "type": "sausage"
+        },
+        {
+            "id": 4,
+            "type": "onions"
+        },
+        {
+            "id": 5,
+            "type": "bell peppers"
+        }
+    ],
+    "pizzaToppings": [
+        {
+            "id": 1,
+            "pizzaId": 1,
+            "toppingId": 1
+        },
+        {
+            "id": 2,
+            "pizzaId": 2,
+            "toppingId": 2
+        },
+        {
+            "id": 3,
+            "pizzaId": 2,
+            "toppingId": 3
+        },
+        {
+            "id": 4,
+            "pizzaId": 3,
+            "toppingId": 4
+        },
+        {
+            "id": 5,
+            "pizzaId": 4,
+            "toppingId": 5
+        }
+    ],
+    "sizes": [
+        {
+            "id": 1,
+            "size": "small",
+            "price": 10
+        },
+        {
+            "id": 2,
+            "size": "medium",
+            "price": 12
+        },
+        {
+            "id": 3,
+            "size": "large",
+            "price": 15
+        }
+    ],
+    "cheeses": [
+        {
+            "id": 1,
+            "type": "mozzarella"
+        },
+        {
+            "id": 2,
+            "type": "cheddar"
+        },
+        {
+            "id": 3,
+            "type": "parmesan"
+        },
+        {
+            "id": 4,
+            "type": "feta"
+        }
+    ],
+    "sauces": [
+        {
+            "id": 1,
+            "type": "marinara"
+        },
+        {
+            "id": 2,
+            "type": "white"
+        },
+        {
+            "id": 3,
+            "type": "pesto"
+        }
+    ]
+}
